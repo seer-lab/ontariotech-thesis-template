@@ -1,0 +1,80 @@
+\documentclass[12pt, 8.5x11]{report}
+
+% Adjust the margin's length and line spacing
+\usepackage{geometry}
+\usepackage{setspace}
+\geometry{margin=1.5in}
+\doublespacing
+
+% Adjust the appearance of the Table of Contents
+\usepackage{tocbibind}
+\usepackage[titles,subfigure]{tocloft}
+
+% Extra packages
+\usepackage[utf8]{inputenc}
+\usepackage{subfig}
+\usepackage{acronym}
+\usepackage{url}
+\usepackage[table]{xcolor}
+\usepackage{cite}
+\usepackage[pdftex]{graphicx}
+\usepackage{pifont}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usepackage{pgfplots}
+\usepackage{moreverb}
+\usepackage{listings}
+\usepackage[chapter]{algorithm}
+
+% thesisTitle(newcommand)
+% Creates a thesis title page.
+% [1]: Student's name (i.e., Roger Random)
+% [2]: Thesis title (i.e., Awesome Thesis Work)
+% [3]: Degree type (i.e., Masters of Science)
+% [4]: Degree area (i.e., Computer Science)
+% [5]: University's name (i.e., University of Ontario Institute of Technology)
+% [6]: Supervisor's name(s) (i.e., Dr. Radar Muppet)
+% [7]: Completion month (i.e., August)
+% [8]: Completion year (i.e., 2012)
+%
+\newcommand{\thesisTitle}[8]{
+  \title{#2}
+  \author{#1}
+
+  \begin{titlepage}
+    \centering
+    {\huge #2}
+    \\[1cm]
+
+    by
+    \\[1cm]
+
+    {\Large #1}
+    \\[2cm]
+
+    \begin{minipage}{3in}
+      \centering
+      \singlespacing{A thesis submitted in partial fulfillment of the requirements for the degree of}
+    \end{minipage}
+    \\[0.5cm]
+
+    {\large #3}
+
+    in
+
+    {\large #4}
+    \\[1cm]
+
+    {\large #5}
+    \\[1.5cm]
+
+    {\large Supervisor: #6}
+    \\[1.5cm]
+
+    #7 #8
+    \\[0.5cm]
+
+    {Copyright \copyright\ #1, #8}
+  \end{titlepage}
+}
+

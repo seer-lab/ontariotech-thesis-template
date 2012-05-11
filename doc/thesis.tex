@@ -1,0 +1,42 @@
+\include{preamble}
+
+\begin{document}
+
+\thesisTitle
+  {Roger Random}
+  {Awesome Thesis Work}
+  {Masters of Science}
+  {Computer Science}
+  {University of Ontario Institute of Technology}
+  {Dr. Radar Muppet}
+  {August}
+  {2012}
+
+\pagenumbering{roman}
+
+\include{abstract}
+\include{acknowledgements}
+
+% Include lists in singlespacing
+\singlespacing
+\tableofcontents
+\listoffigures
+\listoftables
+\lstlistoflistings
+\include{abbreviations}
+\doublespacing
+
+\pagenumbering{arabic}
+
+% Include the Chapters
+\include{introduction}
+\include{background}
+\include{approach}
+\include{experiments}
+\include{releted_works}
+\include{conclusion}
+
+\bibliographystyle{acm}
+\bibliography{references}
+
+\end{document}
