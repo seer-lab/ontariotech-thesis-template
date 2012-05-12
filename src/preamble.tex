@@ -26,6 +26,12 @@
 \usepackage{listings}
 \usepackage[chapter]{algorithm}
 
+% Handle abbreviations
+\newcommand*{\glossaryname}{Abbreviations}
+\usepackage[nonumberlist,toc]{glossaries}
+\input{abbreviations}
+\makeglossaries
+
 % thesisTitle(newcommand)
 % Creates a thesis title page.
 % [1]: Student's name (i.e., Roger Random)
